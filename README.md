@@ -1,3 +1,3 @@
 # marianka-ts
 
-Marianka webapp frontend using Typescript
+webapp for LMŠ Mariánka using Typescript
