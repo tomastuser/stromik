@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import OdrazkyUvod from '../components/Uvod/OdrazkyUvod';
 import UvodSlider from '../components/Uvod/UvodSlider';
-import Andel from '../components/Uvod/Andel';
 import AktualitaZastupce from '../components/AktualitaZastupce';
 import Layout from '../components/Layout';
 import { dbContext } from '../utils/dbContext';
@@ -27,8 +26,6 @@ function Uvod() {
         </div>
         <div className='uvodAktuality'>
           <UvodSlider />
-          <Andel />
-
           <h1>Co je u nás nového?</h1>
           {aktuality ? (
             <div
