@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
+import caraNavR from '../public/caraNavR.png';
+import mariLogo from '../public/mariLogo.png';
+
 function Nav() {
   const [navOpen, setNavOpen] = useState(false);
 
@@ -140,14 +143,11 @@ function Nav() {
           <Link to='/'>
             <div className='logo'>
               <div className='logoCont'>
-                <img
-                  src='https://res.cloudinary.com/tomastuser/image/upload/v1587164936/marianka-logo_jo1a9u.png'
-                  alt=''
-                />
+                <img src={mariLogo} alt='mariLogo' />
               </div>
               <div className='logoText'>
                 <h1>Mariánka</h1>
-                <h4>Lesní mateřská škola v Brně-Líšni</h4>
+                {/* <h4>Lesní mateřská škola v Brně-Líšni</h4> */}
               </div>
             </div>
           </Link>
@@ -231,11 +231,7 @@ function Nav() {
             <div className='line3'></div>
           </div>
         </div>
-        <img
-          src='https://res.cloudinary.com/tomastuser/image/upload/v1594803389/caraNav_zqzshh.png'
-          alt='caraNav'
-          className='caraNav'
-        />
+        <img src={caraNavR} alt='caraNav' className='caraNav' />
       </div>
       <div className='navSpacerAtTheTop' />
     </div>

@@ -34,11 +34,13 @@ const Footer = () => {
         <div className='footerInfo'>
           <ul>
             <li>
-              <h4>
-                <FontAwesomeIcon icon={faPaperPlane} size='1x' fixedWidth />
-                {'  '}
-                info@lesnimarianka.cz
-              </h4>
+              <a href='mailto:info@lesnimarianka.cz'>
+                <h4>
+                  <FontAwesomeIcon icon={faPaperPlane} size='1x' fixedWidth />
+                  {'  '}
+                  info@lesnimarianka.cz
+                </h4>
+              </a>
             </li>
             <li>
               <h4>
@@ -53,10 +55,12 @@ const Footer = () => {
               </h4>
             </li>
             <li>
-              <h4>
-                <FontAwesomeIcon icon={faPhone} size='1x' fixedWidth /> 777 145
-                343
-              </h4>
+              <a href='tel:+420777145343'>
+                <h4>
+                  <FontAwesomeIcon icon={faPhone} size='1x' fixedWidth /> 777
+                  145 343
+                </h4>
+              </a>
             </li>
             <li>
               <h4>
@@ -89,11 +93,13 @@ const Footer = () => {
         <div className='footerInfo'>
           <ul>
             <li>
-              <h4>
-                <FontAwesomeIcon icon={faPaperPlane} size='1x' fixedWidth />
-                {'  '}
-                info@lesnimarianka.cz
-              </h4>
+              <a href='mailto:info@lesnimarianka.cz'>
+                <h4>
+                  <FontAwesomeIcon icon={faPaperPlane} size='1x' fixedWidth />
+                  {'  '}
+                  info@lesnimarianka.cz
+                </h4>
+              </a>
             </li>
             <li>
               <h4>
@@ -108,8 +114,12 @@ const Footer = () => {
               </h4>
             </li>
             <li>
-              <FontAwesomeIcon icon={faPhone} size='1x' fixedWidth /> 777 145
-              343
+              <a href='tel:+420777145343'>
+                <h4>
+                  <FontAwesomeIcon icon={faPhone} size='1x' fixedWidth /> 777
+                  145 343
+                </h4>
+              </a>
             </li>
             <li>
               <h4>

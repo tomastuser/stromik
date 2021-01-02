@@ -44,10 +44,10 @@ import { AktualitaIF, ClenIF, StrankaIF } from './utils/dbInterfaces';
 
 const App = () => {
   let aktuality: AktualitaIF[] | undefined = useFetch(
-    'https://kavyl.herokuapp.com/aktuality/'
+    'https://marianka.herokuapp.com/aktuality/'
   );
   let clenove: ClenIF[] | undefined = useFetch(
-    'https://kavyl.herokuapp.com/lide'
+    'https://marianka.herokuapp.com/lide'
   );
   let stranky: StrankaIF[] | undefined = useFetch(
     'https://kavyl.herokuapp.com/stranky'

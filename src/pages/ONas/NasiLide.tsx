@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import Layout from '../../components/Layout';
 import ClenTymu from '../../components/Tym/ClenTymu';
+import Zaklad from '../../components/Zaklad';
 import { dbContext } from '../../utils/dbContext';
 import { ClenIF } from '../../utils/dbInterfaces';
 
@@ -15,9 +16,13 @@ const NasiLide = () => {
   return (
     <Layout title='Naši lidé'>
       <div className='mainOstatni'>
+        <div className='mainOstatniNadpis'>
+          <div className='mainText'>
+            <Zaklad nazev='Naši lidé' />
+          </div>
+        </div>
         {clenove ? (
           <div className='nasTym'>
-            <h1>Naši lidé</h1>
             <div className='tymContainer'>
               <div className='tym'>
                 {serazeniOdNejvyssiho()
