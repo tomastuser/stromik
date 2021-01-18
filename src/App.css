@@ -64,7 +64,6 @@ main a:hover {
 .mainText {
   text-align: justify;
   grid-column: 2/3;
-  z-index: 2;
   margin-top: 4vh;
 }
 .mainText h1 {
@@ -127,10 +126,10 @@ button {
   text-transform: uppercase;
   padding: 0.5rem;
   border: solid;
-  border-image: url(./public/caraNav12.png) 38 repeat;
+  border-image: url(./public/caraNav12R.png) 38 repeat;
   border-width: 20px;
-  border-image-outset: 3px;
-
+  border-image-outset: 0px;
+  z-index: 1;
   font-weight: normal;
   margin-top: 2vh;
 }
@@ -401,9 +400,17 @@ tr:nth-child(even) {
   color: black;
 }
 
+.footS {
+  border: solid;
+  border-image: url('./public/caraNav12R.png') 41.1 repeat;
+  border-width: 21px;
+  border-image-outset: 3px;
+  background-color: #fdfdec;
+}
+
 .FooterD {
   position: relative;
-  background-color: #fff3e1;
+  background-color: #fdba40;
   display: flex;
   width: 100%;
   justify-content: space-evenly;
@@ -959,46 +966,83 @@ tr:nth-child(even) {
   border: solid;
   border-image: url(./public/caraNav12S.png) 41.1 repeat;
   border-width: 20px;
-  border-image-outset: -10px;
+  border-image-outset: 0px;
   background-color: #fdfdec;
   padding: 4vh;
 }
 
 .aktualitaPozadi1 {
-  background-image: url(./public/slez51.png);
+  /* background-image: url(./public/slez51.png); */
   background-position: -8vw -4.5vh;
   background-repeat: no-repeat;
   background-size: 800px;
+  background-color: #fdc75e;
+}
+.aktualitaPozadi1 .button {
+  background-color: #fcb85e !important;
 }
 .aktualitaPozadi2 {
-  background-image: url(./public/zvonek56.png);
+  /* background-image: url(./public/zvonek56.png); */
   background-position: -16vw -40vh;
   background-repeat: no-repeat;
   background-size: 1100px;
+  background-color: #fcd551;
+}
+.aktualitaPozadi2 .button {
+  background-color: #fdbe47 !important;
 }
 .aktualitaPozadi3 {
-  background-image: url(./public/siska45.png);
+  /* background-image: url(./public/siska45.png); */
   background-position: -3vw -2vh;
   background-repeat: no-repeat;
   background-size: 900px;
+  background-color: #fdbb5a;
+}
+.aktualitaPozadi3 .button {
+  background-color: #fce146 !important;
 }
 .aktualitaPozadi4 {
-  background-image: url(./public/kvitek56.png);
-  background-position: -12vw -10vh;
+  position: relative;
+  background-color: transparent;
+  background-color: #fca54a;
+  z-index: 2;
+}
+.aktualitaPozadi4::before {
+  content: ' ';
+  position: absolute;
+  top: 25vh;
+  left: -5vw;
+  width: 320px;
+  height: 620px;
+  z-index: 0;
+  background-image: url(./public/listekR.png);
+  background-position: 1vw 1vh;
   background-repeat: no-repeat;
-  background-size: 800px;
+  background-size: 220px;
+  pointer-events: none;
+}
+.aktualitaPozadi4 .button {
+  background-color: #e07138 !important;
 }
 .aktualitaPozadi5 {
-  background-image: url(./public/lisejnik54.png);
+  /* background-image: url(./public/lisejnik54.png); */
   background-position: -30vw -2vh;
   background-repeat: no-repeat;
   background-size: 1200px;
+  background-color: #e27c47;
+}
+.aktualitaPozadi5 .button {
+  background-color: #fdbe47 !important;
 }
 .aktualitaPozadi6 {
-  background-image: url(./public/jetel58.png);
+  /* background-image: url(./public/jetel58.png); */
   background-position: -10vw -6vh;
   background-repeat: no-repeat;
   background-size: 700px;
+  background-color: #fcdd2a;
+}
+.aktualitaPozadi6 .button {
+  background-color: #fdb32a !important;
 }
 
 .aktualitaZastupceNadpis {
@@ -1018,6 +1062,7 @@ tr:nth-child(even) {
   display: flex;
   flex-direction: column;
   color: black;
+  z-index: 1;
 }
 
 .aktualitaZastupce img {
@@ -1105,10 +1150,10 @@ tr:nth-child(even) {
 
 .aktualitaImgCont {
   background-repeat: no-repeat;
-  background-image: url(./public/LH_ramecek_foto.png),
+  /* background-image: url(./public/LH_ramecek_foto.png),
     url(./public/LD_ramecek_foto.png), url(./public/PH_ramecek_foto.png),
     url(./public/PD_ramecek_foto.png);
-  background-position: left top, left bottom, right top, right bottom;
+  background-position: left top, left bottom, right top, right bottom; */
   background-size: 25px;
 }
 
@@ -1121,7 +1166,7 @@ tr:nth-child(even) {
 .aktualita img {
   max-height: 50vh;
   max-width: 100%;
-  border-radius: 60px;
+  /* border-radius: 60px; */
 }
 
 .aktualita .button:hover {
@@ -1141,12 +1186,38 @@ tr:nth-child(even) {
 }
 
 .loading {
-  background-color: #fdfdec;
   display: flex;
+  flex-direction: column;
   height: 50vh;
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: black;
+}
+
+.loading h3 {
+  text-transform: uppercase;
+  margin-bottom: 0.5vh;
+  margin-top: 0vh;
+}
+
+.loadingMsg {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.loadingKruh {
+  animation: rotation 6s infinite linear;
+  margin-top: -3vh;
+  margin-bottom: 4vh;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 .zastupce {

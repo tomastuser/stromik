@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import Layout from '../../components/Layout';
+import Loading from '../../components/Loading';
 import ClenTymu from '../../components/Tym/ClenTymu';
 import Zaklad from '../../components/Zaklad';
 import { dbContext } from '../../utils/dbContext';
@@ -34,9 +35,7 @@ const NasiLide = () => {
             </div>
           </div>
         ) : (
-          <div className='loading'>
-            <h3>NAHRÁVÁNÍ...</h3>
-          </div>
+          <Loading />
         )}
       </div>
     </Layout>

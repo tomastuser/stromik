@@ -6,6 +6,8 @@ import AktualitaZastupce from '../components/AktualitaZastupce';
 import Layout from '../components/Layout';
 import { dbContext } from '../utils/dbContext';
 import { AktualitaIF } from '../utils/dbInterfaces';
+import pozadiFixed from '../public/pozadiFixed.jpg';
+import Loading from '../components/Loading';
 
 function Uvod() {
   const { aktuality } = useContext(dbContext);
@@ -19,15 +21,12 @@ function Uvod() {
     <Layout title='Úvodní strana'>
       <div className='Uvod'>
         <div className='pozadiFixed'>
-          <img
-            src='https://res.cloudinary.com/tomastuser/image/upload/v1587637533/aezswjs5y9sb8bds5hyhHD_do5byd.jpg'
-            alt=''
-          ></img>
+          <img src={pozadiFixed} alt=''></img>
         </div>
         <div className='uvodAktuality'>
           <UvodSlider />
           <h1>Co je u nás nového?</h1>
-          {aktuality ? (
+          {aktuality && aktuality.length > 0 ? (
             <div
               style={{
                 marginBottom: '4vh',
@@ -57,9 +56,7 @@ function Uvod() {
               </Link>
             </div>
           ) : (
-            <div className='loading'>
-              <h3>NAHRÁVÁNÍ...</h3>
-            </div>
+            <Loading />
           )}
         </div>
         <div className='pozadiPrazdneContainer'>

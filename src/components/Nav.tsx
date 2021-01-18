@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 import caraNavR from '../public/caraNavR.png';
 import mariLogo from '../public/mariLogo.png';
+import logoNapis from '../public/logo.png';
 
 function Nav() {
   const [navOpen, setNavOpen] = useState(false);
@@ -146,7 +147,7 @@ function Nav() {
                 <img src={mariLogo} alt='mariLogo' />
               </div>
               <div className='logoText'>
-                <h1>Mariánka</h1>
+                <img src={logoNapis} alt='logoNapis' />
                 {/* <h4>Lesní mateřská škola v Brně-Líšni</h4> */}
               </div>
             </div>

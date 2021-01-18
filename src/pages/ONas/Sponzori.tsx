@@ -1,15 +1,39 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { dbContext } from '../../utils/dbContext';
 import Layout from '../../components/Layout';
 import Zaklad from '../../components/Zaklad';
+import Loading from '../../components/Loading';
+import { SponzorIF } from '../../utils/dbInterfaces';
 
 const Sponzori = () => {
+  const { sponzori } = useContext(dbContext);
+  const sponzoriSorted = () => {
+    return [].slice.call(sponzori).sort((a: SponzorIF, b: SponzorIF) => {
+      return Number(b.id) - Number(a.id);
+    });
+  };
   return (
     <Layout title='Podporují nás'>
       <div className='mainTextCont'>
         <div className='mainText'>
           <Zaklad nazev='Podporují nás' />
           <div className='sponzoriCont'>
-            <div>
+            {sponzori && sponzori.length > 0 ? (
+              sponzoriSorted().map((sponzor: SponzorIF) => (
+                <div>
+                  <a href={sponzor.Nazev}>
+                    <img
+                      style={{ height: sponzor.Vyska ? sponzor.Vyska : '5vw' }}
+                      alt=''
+                      src={sponzor.Image.url}
+                    ></img>
+                  </a>
+                </div>
+              ))
+            ) : (
+              <Loading />
+            )}
+            {/* <div>
               <a href='http://www.brno-lisen.cz/'>
                 <img
                   style={{ height: '5vw' }}
@@ -72,7 +96,7 @@ const Sponzori = () => {
                   src='http://www.lesnimarianka.cz/Data/Sites/1/media/to-activity.png'
                 ></img>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -1,11 +1,12 @@
 import React, { useContext } from 'react';
 import { dbContext } from '../utils/dbContext';
+import Loading from './Loading';
 
 const ContentImportSmall = ({ nazev }: { nazev: string }) => {
   const { stranky } = useContext(dbContext);
   return (
     <>
-      {stranky ? (
+      {stranky && stranky.length > 0 ? (
         stranky.map((stranka) =>
           stranka.Nazev === nazev ? (
             <div
@@ -16,9 +17,7 @@ const ContentImportSmall = ({ nazev }: { nazev: string }) => {
         )
       ) : (
         <div className='mainOstatni'>
-          <div className='loading'>
-            <h3>NAHRÁVÁNÍ...</h3>
-          </div>
+          <Loading />
         </div>
       )}
     </>

@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link, RouteComponentProps } from 'react-router-dom';
 import Layout from '../../components/Layout';
+import Loading from '../../components/Loading';
 import { dbContext } from '../../utils/dbContext';
 import { AktualitaIF } from '../../utils/dbInterfaces';
 
@@ -24,7 +25,7 @@ const Aktualita = ({ match, history }: RouteComponentProps<{ id: string }>) => {
                 <div className='aktualitaImg'>
                   <div className='aktualitaImgCont'>
                     {aktualita.Image && (
-                      <Link to={`/onas/aktualita/${aktualita.id}/foto`}>
+                      <Link to={`/aktualita/${aktualita.id}/foto`}>
                         <div>
                           <img
                             src={aktualita.Image.url}
@@ -50,9 +51,7 @@ const Aktualita = ({ match, history }: RouteComponentProps<{ id: string }>) => {
             </div>
           </div>
         ) : (
-          <div className='loading'>
-            <h3>NAHRÁVÁNÍ...</h3>
-          </div>
+          <Loading />
         )}
       </div>
     </Layout>

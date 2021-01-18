@@ -6,7 +6,7 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faBusAlt } from '@fortawesome/free-solid-svg-icons';
 import { faCopyright } from '@fortawesome/free-regular-svg-icons';
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
-import girlanda from '../public/girl2.png';
+import girlanda from '../public/girlmari.png';
 
 const Footer = () => {
   return (
@@ -15,7 +15,7 @@ const Footer = () => {
         <img src={girlanda} alt='girlanda' />
       </div>
       <div className='FooterD'>
-        <div>
+        <div className='footS'>
           <a href='https://www.lesnims.cz/lesni-ms/standardy-kvality.html'>
             <img
               src='https://res.cloudinary.com/tomastuser/image/upload/v1585867492/qdc5glp7boyre6m2sd6p.png'
@@ -23,7 +23,7 @@ const Footer = () => {
             ></img>
           </a>
         </div>
-        <div>
+        <div className='footS'>
           <a href='http://www.lesnims.cz/'>
             <img
               src='http://www.lesnimarianka.cz/Data/Sites/1/media/alms_logo_transparentni.gif'
@@ -72,7 +72,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div>
+        <div className='footS'>
           <a href='https://www.darujme.cz/projekt/1200844'>
             <img
               src='http://www.lesnimarianka.cz/Data/Sites/1/media/darujme_logo.png'
@@ -80,7 +80,7 @@ const Footer = () => {
             ></img>
           </a>
         </div>
-        <div>
+        <div className='footS'>
           <a href='http://bit.ly/Podporuji-Kavyl'>
             <img
               src='http://lesnikvitek.cz/Data/Sites/1/media/uvodni/2017/givt_box_211_211.jpg'

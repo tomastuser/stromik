@@ -40,7 +40,12 @@ import useFetch from './utils/useFetch';
 import PageNotFound from './pages/404';
 
 import { dbContext } from './utils/dbContext';
-import { AktualitaIF, ClenIF, StrankaIF } from './utils/dbInterfaces';
+import {
+  AktualitaIF,
+  ClenIF,
+  StrankaIF,
+  SponzorIF,
+} from './utils/dbInterfaces';
 
 const App = () => {
   let aktuality: AktualitaIF[] | undefined = useFetch(
@@ -50,14 +55,17 @@ const App = () => {
     'https://marianka.herokuapp.com/lide'
   );
   let stranky: StrankaIF[] | undefined = useFetch(
-    'https://kavyl.herokuapp.com/stranky'
+    'https://marianka.herokuapp.com/stranky'
+  );
+  let sponzori: SponzorIF[] | undefined = useFetch(
+    'https://marianka.herokuapp.com/sponzori'
   );
 
   return (
     <Router>
       <ScrollToTop />
       <div className='App'>
-        <dbContext.Provider value={{ aktuality, clenove, stranky }}>
+        <dbContext.Provider value={{ aktuality, clenove, stranky, sponzori }}>
           <Switch>
             <Route path='/' exact component={Uvod} />
             <Route path='/onas' exact component={OMariance} />

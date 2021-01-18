@@ -15,5 +15,11 @@ interface StrankaIF {
   Nazev: string;
   Text: string;
 }
+interface SponzorIF {
+  Nazev: string;
+  Vyska: string;
+  Image: { url: string };
+  id: string;
+}
 
-export { AktualitaIF, ClenIF, StrankaIF };
+export { AktualitaIF, ClenIF, StrankaIF, SponzorIF };
