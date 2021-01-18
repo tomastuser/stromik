@@ -6,7 +6,6 @@ import AktualitaZastupce from '../components/AktualitaZastupce';
 import Layout from '../components/Layout';
 import { dbContext } from '../utils/dbContext';
 import { AktualitaIF } from '../utils/dbInterfaces';
-import pozadiFixed from '../public/pozadiFixed.jpg';
 import Loading from '../components/Loading';
 
 function Uvod() {
@@ -21,7 +20,10 @@ function Uvod() {
     <Layout title='Úvodní strana'>
       <div className='Uvod'>
         <div className='pozadiFixed'>
-          <img src={pozadiFixed} alt=''></img>
+          <img
+            src='https://res.cloudinary.com/tomastuser/image/upload/v1587637533/aezswjs5y9sb8bds5hyhHD_do5byd.jpg'
+            alt='pozadiFixed'
+          />
         </div>
         <div className='uvodAktuality'>
           <UvodSlider />

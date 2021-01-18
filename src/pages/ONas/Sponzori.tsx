@@ -9,7 +9,7 @@ const Sponzori = () => {
   const { sponzori } = useContext(dbContext);
   const sponzoriSorted = () => {
     return [].slice.call(sponzori).sort((a: SponzorIF, b: SponzorIF) => {
-      return Number(b.id) - Number(a.id);
+      return Number(a.id) - Number(b.id);
     });
   };
   return (
