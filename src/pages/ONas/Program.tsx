@@ -7,7 +7,7 @@ const Program = () => {
     <Layout title='Program'>
       <div className='mainTextCont'>
         <div className='mainText'>
-          <ContentImport nazev='Zázemí' />
+          <ContentImport nazev='Program' />
         </div>
       </div>
     </Layout>
