@@ -19,6 +19,9 @@ interface SponzorIF {
   Nazev: string;
   Vyska: string;
   Image: { url: string };
+  Odkaz: string;
+  Poradi: number;
+  Okraj: number;
   id: string;
 }
 

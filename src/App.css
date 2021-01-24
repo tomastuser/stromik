@@ -378,7 +378,7 @@ tr:nth-child(even) {
   grid-column: 3/4;
   cursor: pointer;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 
   background-color: transparent;
 }
@@ -418,11 +418,6 @@ tr:nth-child(even) {
 }
 
 .footS {
-  border: solid;
-  border-image: url('./public/caraNav12R.png') 41.1 repeat;
-  border-width: 21px;
-  border-image-outset: 3px;
-  background-color: #fdfdec;
 }
 
 .FooterD {
@@ -438,6 +433,7 @@ tr:nth-child(even) {
   border-image: url('./public/caraNav12R.png') 38 repeat;
   border-width: 21px;
   border-image-outset: 3px;
+  z-index: 5;
 }
 
 .Footer ul {
@@ -1316,7 +1312,7 @@ tr:nth-child(even) {
 
 .clenTymuText {
   margin-top: 3vh;
-  text-align: justify;
+  text-align: left;
 }
 
 .odrazkyUvodContainer {
@@ -1372,7 +1368,6 @@ tr:nth-child(even) {
     grid-template-columns: auto auto auto;
     padding: 2vw;
     padding-top: 20vh;
-    z-index: 5;
   }
   .girlanda {
     margin-bottom: -25vh;
@@ -1467,11 +1462,20 @@ tr:nth-child(even) {
   .girlanda {
     margin-bottom: -20vh;
   }
+  .Footer2 {
+    grid-template-columns: 1fr 15fr 1fr;
+  }
+  .profilFotoTecky {
+    width: 4vw !important;
+  }
 }
 
 /* MOBILE NAV */
 
 @media screen and (max-width: 768px) {
+  .mainOstatniNadpis {
+    grid-template-columns: 1fr 5fr 1fr;
+  }
   .mainTextCont {
     padding-bottom: 0;
   }
@@ -1687,17 +1691,20 @@ tr:nth-child(even) {
   }
   .FooterM {
     padding-top: 15vh;
-    background-color: #f4e1ff;
+    background-color: #fdba40;
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
+    padding: 25vh 8vw 3vh 8vw;
     border-top: solid;
     border-bottom: solid;
-    border-image: url(./public/caraNav12.png) 38 repeat;
-    border-width: 20px;
-    border-image-outset: 2px;
+    border-image: url('./public/caraNav12R.png') 38 repeat;
+    border-width: 21px;
+    border-image-outset: 3px;
+    z-index: 5;
   }
   .girlanda {
     margin-bottom: -10vh;
@@ -1750,13 +1757,22 @@ tr:nth-child(even) {
     font-size: 2em;
   }
   .Footer2 {
-    grid-template-columns: 1fr 12fr 1fr;
+    grid-template-columns: 1fr 8fr 1fr;
+  }
+  .profilFotoTecky {
+    width: 6vw !important;
   }
 }
 
 /* SMALL MOBILE NAV */
 
 @media screen and (max-width: 450px) {
+  body {
+    font-size: 1rem;
+  }
+  .mainOstatniNadpis {
+    grid-template-columns: 1fr 8fr 1fr;
+  }
   .logo {
     margin-left: -2vw;
   }
@@ -1803,5 +1819,8 @@ tr:nth-child(even) {
   }
   .Footer2 {
     grid-template-columns: 1fr 5fr 1fr;
+  }
+  .profilFotoTecky {
+    width: 10vw !important;
   }
 }

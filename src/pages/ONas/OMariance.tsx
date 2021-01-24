@@ -9,6 +9,7 @@ const OMariance = () => {
     <Layout title='O Mariánce'>
       <div className='mainTextCont'>
         <div className='mainText'>
+          <Zaklad nazev='O Mariánce' />
           <ContentImport nazev='O Mariánce' />
           <FotoCont name='KDOJSME.jpg' alt='Kdo jsme' />
         </div>

@@ -11,7 +11,6 @@ const ContentImport = ({ nazev }: { nazev: string }) => {
         stranky.map((stranka) =>
           stranka.Nazev === nazev ? (
             <>
-              <Zaklad nazev={stranka.Nazev} />
               <div dangerouslySetInnerHTML={{ __html: stranka.Text }} />
             </>
           ) : null

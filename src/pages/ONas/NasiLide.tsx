@@ -22,7 +22,7 @@ const NasiLide = () => {
             <Zaklad nazev='Naši lidé' />
           </div>
         </div>
-        {clenove ? (
+        {clenove && clenove.length > 0 ? (
           <div className='nasTym'>
             <div className='tymContainer'>
               <div className='tym'>
