@@ -38,7 +38,7 @@ function UvodSlider() {
     ),
   };
   return (
-    <div>
+    <>
       <Slider {...settings}>
         <CustomSlide
           index={1}
@@ -93,7 +93,7 @@ function UvodSlider() {
           <img alt='sipka' src={sipkaB} />
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

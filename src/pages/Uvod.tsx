@@ -18,20 +18,20 @@ function Uvod() {
   };
   return (
     <Layout title='Úvodní strana'>
+      <div className='pozadiFixed'>
+        <img
+          src='https://res.cloudinary.com/tomastuser/image/upload/v1587637533/aezswjs5y9sb8bds5hyhHD_do5byd.jpg'
+          alt='pozadiFixed'
+        />
+      </div>
       <div className='Uvod'>
-        <div className='pozadiFixed'>
-          <img
-            src='https://res.cloudinary.com/tomastuser/image/upload/v1587637533/aezswjs5y9sb8bds5hyhHD_do5byd.jpg'
-            alt='pozadiFixed'
-          />
-        </div>
         <div className='uvodAktuality'>
           <UvodSlider />
           <h1>Co je u nás nového?</h1>
           {aktuality && aktuality.length > 0 ? (
             <div
               style={{
-                marginBottom: '4vh',
+                marginBottom: '8vh',
               }}
             >
               <div className='aktuality'>
@@ -45,6 +45,7 @@ function Uvod() {
                     />
                   ))}
               </div>
+              <br />
               <Link
                 className='button'
                 style={{

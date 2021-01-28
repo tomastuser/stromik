@@ -2,7 +2,6 @@ import React from 'react';
 import Zaklad from '../components/Zaklad';
 import Layout from '../components/Layout';
 import ContentImportSmall from '../components/ContentImportSmall';
-import PageNotFound from './404';
 
 function Kontakt() {
   return (
@@ -12,7 +11,7 @@ function Kontakt() {
           <Zaklad nazev='Kontakt' />
           <div className='kontaktContD'>
             <div className='kontaktA'>
-              <h3>Kde nás najdete</h3> <p>ulice Samoty, Brno-Líšeň</p>
+              <ContentImportSmall nazev='Kontakt1' />
               <div className='mapouterD'>
                 <div className='gmap_canvas'>
                   <iframe
@@ -36,87 +35,15 @@ function Kontakt() {
               </div>
             </div>
             <div className='kontaktB'>
-              <h3>Lesní mateřská škola Mariánka</h3>
-              <ul>
-                <li>školská právnická osoba</li>
-                <li>Sídlo: č. p. 137, 664 06 Viničné Šumice</li>
-                <li>IČ: 06 107 591</li>
-                <li>ID datové schránky: 6h4qvbm</li>
-                <li>č. účtu: 77996002/5500 (Raiffeisen bank)</li>
-                <li>info@lesnimarianka.cz</li>
-              </ul>
-              <h3>Pro rodiče</h3>{' '}
-              <p>
-                {' '}
-                Mgr. Klára Taufarová <br />
-                604 536 796
-              </p>
-              <h3>Ředitelka</h3>{' '}
-              <p>
-                {' '}
-                Mgr. Klára Krchňavá <br />
-                777 145 343
-              </p>
-              <h3>Zřizovatel</h3>
-              <ul>
-                <li>Kavyl z.s.</li>
-                <li>Sídlo: č. p. 137, 664 06 Viničné Šumice</li>
-                <li>IČ: 229 09 320</li>
-                <li>
-                  <a href='www.lesnikavyl.cz'>lesnikavyl.cz</a>
-                </li>
-              </ul>
-              <div>
-                <h3>Pracovní příležitosti</h3>
-                <p>
-                  Máte-li zájem o spolupráci nebo stáž, kontaktujte ředitelku
-                  LMŠ Mariánka.
-                </p>
-              </div>
+              <ContentImportSmall nazev='Kontakt2' />
             </div>
           </div>
           <div className='kontaktContM'>
             <div className='kontaktB'>
-              <h3>Lesní mateřská škola Mariánka</h3>
-              <ul>
-                <li>školská právnická osoba</li>
-                <li>Sídlo: č. p. 137, 664 06 Viničné Šumice</li>
-                <li>IČ: 06 107 591</li>
-                <li>ID datové schránky: 6h4qvbm</li>
-                <li>č. účtu: 77996002/5500 (Raiffeisen bank)</li>
-                <li>info@lesnimarianka.cz</li>
-              </ul>
-              <h3>Pro rodiče</h3>{' '}
-              <p>
-                {' '}
-                Mgr. Klára Taufarová <br />
-                604 536 796
-              </p>
-              <h3>Ředitelka</h3>{' '}
-              <p>
-                {' '}
-                Mgr. Klára Krchňavá <br />
-                777 145 343
-              </p>
-              <h3>Zřizovatel</h3>
-              <ul>
-                <li>Kavyl z.s.</li>
-                <li>Sídlo: č. p. 137, 664 06 Viničné Šumice</li>
-                <li>IČ: 229 09 320</li>
-                <li>
-                  <a href='www.lesnikavyl.cz'>lesnikavyl.cz</a>
-                </li>
-              </ul>
-              <div>
-                <h3>Pracovní příležitosti</h3>
-                <p>
-                  Máte-li zájem o spolupráci nebo stáž, kontaktujte ředitelku
-                  LMŠ Mariánka.
-                </p>
-              </div>
+              <ContentImportSmall nazev='Kontakt2' />
             </div>
             <div className='kontaktA'>
-              <h3>Kde nás najdete</h3> <p>ulice Samoty, Brno-Líšeň</p>
+              <ContentImportSmall nazev='Kontakt1' />
               <div className='mapouterM'>
                 <div className='gmap_canvas'>
                   <iframe

@@ -244,7 +244,7 @@ tr:nth-child(even) {
 }
 
 .logoText img {
-  max-height: 8vh;
+  max-height: 6.9vh;
 }
 
 .logoText h1 {
@@ -368,7 +368,7 @@ tr:nth-child(even) {
 /* PAGES */
 
 .Footer2 {
-  background-color: #fdfdec;
+  background-color: #ff9e44;
   display: grid;
   grid-template-columns: 1fr 20fr 1fr;
   align-items: center;
@@ -395,6 +395,7 @@ tr:nth-child(even) {
   justify-content: center;
   align-items: center;
   z-index: 5;
+  background-color: #d5e9dc;
 }
 .up img {
   height: 4vh;
@@ -422,7 +423,7 @@ tr:nth-child(even) {
 
 .FooterD {
   position: relative;
-  background-color: #fdba40;
+  background-color: #d5e9dc;
   display: flex;
   width: 100%;
   justify-content: space-evenly;
@@ -472,7 +473,7 @@ tr:nth-child(even) {
     url(./public/PD_ramecek_foto.png);
   background-position: left top, left bottom, right top, right bottom;
   background-size: 25px;
-  background-color: #fdfdec;
+  background-color: #8eada5;
   padding: 1.2vw 2.3vw 1vw 2.3vw;
 }
 
@@ -507,6 +508,9 @@ tr:nth-child(even) {
   margin-bottom: 5vh;
 }
 
+.uvodAktuality h1 {
+  margin-top: 5vh;
+}
 .uvodAktuality {
   background-color: #fdfdec;
   padding-bottom: 8vh;
@@ -1691,7 +1695,7 @@ tr:nth-child(even) {
   }
   .FooterM {
     padding-top: 15vh;
-    background-color: #fdba40;
+    background-color: #d5e9dc;
     position: relative;
     display: flex;
     flex-direction: column;
