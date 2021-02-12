@@ -29,11 +29,7 @@ function Uvod() {
           <UvodSlider />
           <h1>Co je u nás nového?</h1>
           {aktuality && aktuality.length > 0 ? (
-            <div
-              style={{
-                marginBottom: '8vh',
-              }}
-            >
+            <div>
               <div className='aktuality'>
                 {serazeniOdNejvyssiho()
                   .slice(0, 3)

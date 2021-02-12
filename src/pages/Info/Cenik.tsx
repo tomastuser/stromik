@@ -1,5 +1,6 @@
 import React from 'react';
 import ContentImport from '../../components/ContentImport';
+import FotoCont from '../../components/FotoCont';
 import Layout from '../../components/Layout';
 import Zaklad from '../../components/Zaklad';
 
@@ -10,6 +11,7 @@ const Cenik = () => {
         <div className='mainText'>
           <Zaklad nazev='Ceník' />
           <ContentImport nazev='Ceník' />
+          <FotoCont name='cenik.jpg' alt='Cenik' />
         </div>
       </div>
     </Layout>

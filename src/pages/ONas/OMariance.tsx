@@ -10,8 +10,10 @@ const OMariance = () => {
       <div className='mainTextCont'>
         <div className='mainText'>
           <Zaklad nazev='O Mariánce' />
-          <ContentImport nazev='O Mariánce' />
-          <FotoCont name='KDOJSME.jpg' alt='Kdo jsme' />
+          <ContentImport nazev='O Mariánce 1' />
+          <FotoCont name='omari.jpg' alt='O Mariance 1' />
+          <ContentImport nazev='O Mariánce 2' />
+          <FotoCont name='omari2.jpg' alt='O Mariance 2' />
         </div>
       </div>
     </Layout>

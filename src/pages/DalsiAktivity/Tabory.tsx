@@ -1,5 +1,6 @@
 import React from 'react';
 import ContentImport from '../../components/ContentImport';
+import FotoCont from '../../components/FotoCont';
 import Layout from '../../components/Layout';
 import Zaklad from '../../components/Zaklad';
 
@@ -10,6 +11,7 @@ const Tabory = () => {
         <div className='mainText'>
           <Zaklad nazev='Tábory' />
           <ContentImport nazev='Tábory' />
+          <FotoCont name='tabor.jpg' alt='Tabor' />
         </div>
       </div>
     </Layout>
