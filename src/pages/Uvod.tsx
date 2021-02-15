@@ -7,7 +7,7 @@ import Layout from '../components/Layout';
 import { dbContext } from '../utils/dbContext';
 import { AktualitaIF } from '../utils/dbInterfaces';
 import Loading from '../components/Loading';
-import PozadiFixed from '../public/pozadiFixed.jpg';
+import PozadiFixed from '../public/pozadiFixed.png';
 
 function Uvod() {
   const { aktuality } = useContext(dbContext);
