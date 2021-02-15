@@ -64,6 +64,10 @@ main a:hover {
   padding-top: 1vh;
   padding-bottom: 10vh;
   background-color: #fdfdec;
+  background-image: url(./public/aktualitypozadi.png);
+  /* background-position: -8vw -4.5vh; */
+  /* background-repeat: no-repeat; */
+  background-size: 800px;
   min-height: 80vh;
 }
 
@@ -509,11 +513,10 @@ tr:nth-child(even) {
 }
 
 .uvodAktuality h1 {
-  margin-top: 5vh;
+  padding-top: 5vh;
 }
 .uvodAktuality {
   background-color: #fdfdec;
-  padding-bottom: 8vh;
 }
 
 .pozadiFixed {
@@ -572,9 +575,6 @@ tr:nth-child(even) {
   margin-bottom: 10vh;
 }
 
-.odrazkyUvodContainer li {
-  font-size: 16px;
-}
 .odrazkyUvodContainer ul {
   list-style: none;
   margin-left: 0;
@@ -904,7 +904,17 @@ tr:nth-child(even) {
   flex-direction: column;
   align-items: center;
   background-color: #fdfdec;
+  background-image: url(./public/aktualitypozadi.png);
+  /* background-position: -8vw -4.5vh; */
+  /* background-repeat: no-repeat; */
+  background-size: 800px;
   padding-top: 5vh;
+}
+
+.aktualityPrehledUvod {
+  background-image: url(./public/aktualitypozadi.png);
+  background-size: 800px;
+  padding-bottom: 12vh;
 }
 
 .pagination {
@@ -987,79 +997,216 @@ tr:nth-child(even) {
   background-color: #fdfdec;
   padding: 4vh;
 }
-
+.aktualitaPozadi1::after {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: solid;
+  border-image: url(./public/caraNav12S.png) 41.1 repeat;
+  border-width: 20px;
+  border-image-outset: 0px;
+  z-index: 6;
+  top: -20px;
+  left: -20px;
+  pointer-events: none;
+}
+.aktualitaPozadi1::before {
+  content: ' ';
+  position: absolute;
+  top: -85px;
+  left: -125px;
+  width: 220px;
+  height: 280px;
+  z-index: 0;
+  background-image: url(./public/L1.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 28vh;
+  pointer-events: none;
+}
 .aktualitaPozadi1 {
   /* background-image: url(./public/slez51.png); */
-  background-position: -8vw -4.5vh;
-  background-repeat: no-repeat;
-  background-size: 800px;
-  background-color: #fdc75e;
+  position: relative;
+  background-color: transparent;
+  z-index: 2;
+  /* background-color: #fdc75e; */
 }
 .aktualitaPozadi1 .button {
-  background-color: #fcb85e !important;
+  /* background-color: #fcb85e !important; */
+}
+.aktualitaPozadi2::before {
+  content: ' ';
+  position: absolute;
+  bottom: -80px;
+  left: -110px;
+  width: 280px;
+  height: 120px;
+  z-index: 0;
+  background-image: url(./public/L4.png);
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: 280px;
+  pointer-events: none;
+}
+.aktualitaPozadi2::after {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: solid;
+  border-image: url(./public/caraNav12S.png) 41.1 repeat;
+  border-width: 20px;
+  border-image-outset: 0px;
+  z-index: 6;
+  top: -20px;
+  left: -20px;
+  pointer-events: none;
 }
 .aktualitaPozadi2 {
   /* background-image: url(./public/zvonek56.png); */
-  background-position: -16vw -40vh;
-  background-repeat: no-repeat;
-  background-size: 1100px;
-  background-color: #fcd551;
+  position: relative;
+  background-color: transparent;
+  z-index: 2;
+  /* background-color: #fcd551; */
 }
 .aktualitaPozadi2 .button {
-  background-color: #fdbe47 !important;
+  /* background-color: #fdbe47 !important; */
+}
+.aktualitaPozadi3::after {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: solid;
+  border-image: url(./public/caraNav12S.png) 41.1 repeat;
+  border-width: 20px;
+  border-image-outset: 0px;
+  z-index: 6;
+  top: -20px;
+  left: -20px;
+  pointer-events: none;
+}
+.aktualitaPozadi3::before {
+  content: ' ';
+  position: absolute;
+  top: -80px;
+  right: -145px;
+  width: 200px;
+  height: 250px;
+  z-index: 0;
+  background-image: url(./public/L5.png);
+  background-position: 1vw 1vh;
+  background-repeat: no-repeat;
+  background-size: 180px;
+  pointer-events: none;
 }
 .aktualitaPozadi3 {
   /* background-image: url(./public/siska45.png); */
-  background-position: -3vw -2vh;
-  background-repeat: no-repeat;
-  background-size: 900px;
-  background-color: #fdbb5a;
+  position: relative;
+  background-color: transparent;
+  z-index: 2;
+  /* background-color: #fdbb5a; */
 }
 .aktualitaPozadi3 .button {
-  background-color: #fce146 !important;
+  /* background-color: #fce146 !important; */
 }
 .aktualitaPozadi4 {
   position: relative;
   background-color: transparent;
-  background-color: #fca54a;
+  /* background-color: #fca54a; */
   z-index: 2;
+}
+.aktualitaPozadi4::after {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: solid;
+  border-image: url(./public/caraNav12S.png) 41.1 repeat;
+  border-width: 20px;
+  border-image-outset: 0px;
+  z-index: 6;
+  top: -20px;
+  left: -20px;
+  pointer-events: none;
 }
 .aktualitaPozadi4::before {
   content: ' ';
   position: absolute;
-  top: 25vh;
-  left: -5vw;
-  width: 320px;
-  height: 620px;
+  bottom: -100px;
+  left: -8vw;
+  width: 350px;
+  height: 130px;
   z-index: 0;
-  background-image: url(./public/listekR.png);
-  background-position: 1vw 1vh;
+  background-image: url(./public/L4R.png);
+  background-position: 0;
   background-repeat: no-repeat;
-  background-size: 220px;
+  background-size: 350px;
   pointer-events: none;
 }
 .aktualitaPozadi4 .button {
-  background-color: #e07138 !important;
+  /* background-color: #e07138 !important; */
+}
+.aktualitaPozadi5::after {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: solid;
+  border-image: url(./public/caraNav12S.png) 41.1 repeat;
+  border-width: 20px;
+  border-image-outset: 0px;
+  z-index: 6;
+  top: -20px;
+  left: -20px;
+  pointer-events: none;
 }
 .aktualitaPozadi5 {
   /* background-image: url(./public/lisejnik54.png); */
-  background-position: -30vw -2vh;
-  background-repeat: no-repeat;
-  background-size: 1200px;
-  background-color: #e27c47;
+  position: relative;
+  background-color: transparent;
+  z-index: 2;
+  /* background-color: #e27c47; */
 }
 .aktualitaPozadi5 .button {
-  background-color: #fdbe47 !important;
+  /* background-color: #fdbe47 !important; */
+}
+.aktualitaPozadi6::after {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: solid;
+  border-image: url(./public/caraNav12S.png) 41.1 repeat;
+  border-width: 20px;
+  border-image-outset: 0px;
+  z-index: 6;
+  top: -20px;
+  left: -20px;
+  pointer-events: none;
+}
+.aktualitaPozadi6::before {
+  content: ' ';
+  position: absolute;
+  right: -110px;
+  bottom: -120px;
+  width: 220px;
+  height: 280px;
+  z-index: 0;
+  background-image: url(./public/L1.png);
+  background-repeat: no-repeat;
+  background-size: 200px;
+  pointer-events: none;
 }
 .aktualitaPozadi6 {
   /* background-image: url(./public/jetel58.png); */
-  background-position: -10vw -6vh;
-  background-repeat: no-repeat;
-  background-size: 700px;
-  background-color: #fcdd2a;
+  position: relative;
+  background-color: transparent;
+  z-index: 2;
 }
 .aktualitaPozadi6 .button {
-  background-color: #fdb32a !important;
+  /* background-color: #fdb32a !important; */
 }
 
 .aktualitaZastupceNadpis {
@@ -1070,11 +1217,12 @@ tr:nth-child(even) {
   text-decoration: none;
   text-align: left;
   color: var(--text);
+  position: relative;
+  z-index: 10;
 }
 
 .aktualitaZastupceText {
   flex-grow: 3;
-  padding-top: 5vh;
   padding-bottom: 1vh;
   display: flex;
   flex-direction: column;
@@ -1146,12 +1294,14 @@ tr:nth-child(even) {
   border-image: url(./public/caraNav12S.png) 41.1 repeat;
   border-width: 20px;
   border-image-outset: -20px;
-  background-color: #fdfdec;
   text-align: left;
   padding: 4vh;
-  overflow: auto;
+  /* overflow: auto; */
   display: flex;
   flex-direction: column;
+  position: relative;
+  background-color: transparent;
+  z-index: 2;
 }
 
 .aktualitaNadpis {
@@ -1323,7 +1473,7 @@ tr:nth-child(even) {
   display: grid;
   grid-template-columns: 200fr 1fr 200fr;
   grid-column-gap: 2vw;
-  font-size: 19px;
+  font-size: 1.1rem;
   line-height: 300%;
   margin-bottom: 2vh;
   margin-top: 4vh;
@@ -1356,6 +1506,16 @@ tr:nth-child(even) {
 @media screen and (max-width: 1280px) {
   .navLinks {
     width: 70%;
+  }
+  .logoCont {
+    height: 7vh;
+    margin-left: 2rem;
+  }
+  .logo {
+    width: 30%;
+  }
+  .logoText img {
+    max-height: 5.5vh;
   }
   .vitejteCont {
     font-size: 2rem;
@@ -1415,19 +1575,12 @@ tr:nth-child(even) {
 
   .logoCont {
     height: 5vh;
-    margin-top: 0.5vh;
-    margin-right: 0.5vw;
   }
   .logo {
     width: 30%;
-    justify-content: space-between;
-    margin-left: 1vw;
-    margin-top: 1vh;
   }
-
   .logoText img {
-    max-height: 6vh;
-    margin-top: 0.5vh;
+    max-height: 4vh;
   }
   .caraNav {
     width: 200%;
@@ -1503,16 +1656,14 @@ tr:nth-child(even) {
     font-size: 2.9vh;
   }
   .logoCont {
-    height: 7vh;
-    margin-top: 0vh;
-    margin-right: 0vw;
-  }
-  .logoText img {
-    max-height: 8vh;
-    margin-top: 0.5vh;
+    height: 6vh;
+    margin-right: 1rem;
   }
   .logo {
-    margin-top: 1.5vh;
+    width: 50%;
+  }
+  .logoText img {
+    max-height: 5vh;
   }
   .navLinks a {
     width: 100%;
@@ -1559,16 +1710,6 @@ tr:nth-child(even) {
   .spacer {
     display: block;
     width: 25%;
-  }
-
-  .logo {
-    justify-content: center;
-    width: 100%;
-  }
-
-  .logoText {
-    text-align: center;
-    margin-left: 2vw;
   }
 
   .caraNav {

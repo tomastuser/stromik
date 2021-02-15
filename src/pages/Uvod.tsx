@@ -7,6 +7,7 @@ import Layout from '../components/Layout';
 import { dbContext } from '../utils/dbContext';
 import { AktualitaIF } from '../utils/dbInterfaces';
 import Loading from '../components/Loading';
+import PozadiFixed from '../public/pozadiFixed.jpg';
 
 function Uvod() {
   const { aktuality } = useContext(dbContext);
@@ -19,44 +20,43 @@ function Uvod() {
   return (
     <Layout title='Úvodní strana'>
       <div className='pozadiFixed'>
-        <img
-          src='https://res.cloudinary.com/tomastuser/image/upload/v1587637533/aezswjs5y9sb8bds5hyhHD_do5byd.jpg'
-          alt='pozadiFixed'
-        />
+        <img src={PozadiFixed} alt='pozadiFixed' />
       </div>
       <div className='Uvod'>
         <div className='uvodAktuality'>
           <UvodSlider />
-          <h1>Co je u nás nového?</h1>
-          {aktuality && aktuality.length > 0 ? (
-            <div>
-              <div className='aktuality'>
-                {serazeniOdNejvyssiho()
-                  .slice(0, 3)
-                  .map((aktualita: AktualitaIF, index: number) => (
-                    <AktualitaZastupce
-                      key={aktualita.id}
-                      aktualita={aktualita}
-                      pozadi={`aktualitaPozadi${index + 1}`}
-                    />
-                  ))}
+          <div className='aktualityPrehledUvod'>
+            <h1>Co je u nás nového?</h1>
+            {aktuality && aktuality.length > 0 ? (
+              <div>
+                <div className='aktuality'>
+                  {serazeniOdNejvyssiho()
+                    .slice(0, 3)
+                    .map((aktualita: AktualitaIF, index: number) => (
+                      <AktualitaZastupce
+                        key={aktualita.id}
+                        aktualita={aktualita}
+                        pozadi={`aktualitaPozadi${index + 1}`}
+                      />
+                    ))}
+                </div>
+                <br />
+                <Link
+                  className='button'
+                  style={{
+                    width: '15%',
+                    padding: '0.8rem 1.8rem 0.8rem 1.8rem',
+                    minWidth: '260px',
+                  }}
+                  to='/aktuality'
+                >
+                  Všechny příspěvky
+                </Link>
               </div>
-              <br />
-              <Link
-                className='button'
-                style={{
-                  width: '15%',
-                  padding: '0.8rem 1.8rem 0.8rem 1.8rem',
-                  minWidth: '260px',
-                }}
-                to='/aktuality'
-              >
-                Všechny příspěvky
-              </Link>
-            </div>
-          ) : (
-            <Loading />
-          )}
+            ) : (
+              <Loading />
+            )}
+          </div>
         </div>
         <div className='pozadiPrazdneContainer'>
           <div className='pozadiPrazdne'>

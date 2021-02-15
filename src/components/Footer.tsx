@@ -12,6 +12,7 @@ import girlanda from '../public/girlmari.png';
 import darujme from '../public/darujme.png';
 import cert from '../public/cert.png';
 import { StrankaIF } from '../utils/dbInterfaces';
+import Loading from './Loading';
 
 const Footer = () => {
   const { stranky } = useContext(dbContext);
@@ -43,7 +44,8 @@ const Footer = () => {
         </div>
         <div className='footerInfo'>
           <ul>
-            {paticka &&
+            {paticka ? (
+              paticka &&
               paticka.Text &&
               paticka.Text.split('</h4>').map((radek, index) => (
                 <li
@@ -59,7 +61,10 @@ const Footer = () => {
                     }}
                   />
                 </li>
-              ))}
+              ))
+            ) : (
+              <Loading />
+            )}
           </ul>
         </div>
         <div className='footS'>
