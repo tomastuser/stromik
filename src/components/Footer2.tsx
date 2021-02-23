@@ -8,7 +8,7 @@ const Footer2 = () => {
       <div className='Footer2'>
         <div className='copyright'>
           <h3>
-            ©&nbsp;LMŠ Mariánka&nbsp;
+            ©&nbsp;LMŠ Stromík&nbsp;
             {d.getFullYear()}
           </h3>
         </div>

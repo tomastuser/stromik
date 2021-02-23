@@ -1,3 +1,3 @@
-# marianka-ts
+# stromik
 
-webapp for LMŠ Mariánka using Typescript
+webapp for LMŠ Stromik

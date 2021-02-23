@@ -8,7 +8,7 @@ import ScrollToTop from '../utils/ScrollToTop';
 
 const Layout = ({
   children,
-  title = 'LMŠ Mariánka',
+  title = 'LMŠ Stromík',
 }: {
   children: React.ReactNode;
   title: string;
@@ -16,7 +16,7 @@ const Layout = ({
   return (
     <HelmetProvider>
       <Helmet>
-        <title>{`LMŠ Mariánka | Lesní školka v Brně-Líšni - ${title}`}</title>
+        <title>{`LMŠ Stromík | Lesní školka v Pozořicích - ${title}`}</title>
       </Helmet>
       <header>
         <ScrollToTop />
