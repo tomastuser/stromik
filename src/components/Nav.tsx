@@ -65,10 +65,6 @@ function Nav() {
           name: 'Naše pravidla',
           path: '/info/nasepravidla',
         },
-        {
-          name: 'Interni sekce',
-          path: '/info/interni',
-        },
       ],
     },
     {

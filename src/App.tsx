@@ -52,10 +52,10 @@ const App = () => {
     'https://marianka.herokuapp.com/aktuality/'
   );
   let clenove: ClenIF[] | undefined = useFetch(
-    'https://marianka.herokuapp.com/lide'
+    'https://stromik.herokuapp.com/lide'
   );
   let stranky: StrankaIF[] | undefined = useFetch(
-    'https://marianka.herokuapp.com/stranky'
+    'https://stromik.herokuapp.com/stranky'
   );
   let sponzori: SponzorIF[] | undefined = useFetch(
     'https://marianka.herokuapp.com/sponzori'
@@ -82,7 +82,7 @@ const App = () => {
             <Route exact path='/info/cenik' component={Cenik} />
             <Route exact path='/info/cossebou' component={CoSSebou} />
             <Route exact path='/info/nasepravidla' component={NasePravidla} />
-            <Route exact path='/info/interni' component={Interni} />
+            {/* <Route exact path='/info/interni' component={Interni} /> */}
 
             <Route path='/aktuality' exact component={AktualityVse} />
             <Route exact path='/aktualita/:id' component={Aktualita} />
