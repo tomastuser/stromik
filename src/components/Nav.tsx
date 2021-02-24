@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 import caraNavR from '../public/caraNavR.png';
-import mariLogo from '../public/mariLogo.png';
+import stromikLogo from '../public/stromikLogo.png';
 import logoNapis from '../public/logo.png';
 
 function Nav() {
@@ -140,11 +140,10 @@ function Nav() {
           <Link to='/'>
             <div className='logo'>
               <div className='logoCont'>
-                <img src={mariLogo} alt='mariLogo' />
+                <img src={stromikLogo} alt='stromikLogo' />
               </div>
               <div className='logoText'>
                 <img src={logoNapis} alt='logoNapis' />
-                {/* <h4>Lesní mateřská škola v Brně-Líšni</h4> */}
               </div>
             </div>
           </Link>
