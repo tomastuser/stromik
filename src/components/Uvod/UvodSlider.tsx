@@ -79,7 +79,7 @@ function UvodSlider() {
       </Slider>
       <div className='vitejteCont'>
         <div className='vitejte'>
-          Vítejte v Mariánce! <br /> Školce bez zdí a plotů
+          Vítejte ve Stromíku! <br /> Školce bez zdí a plotů
         </div>
       </div>
       <div className='sipkaCont'>

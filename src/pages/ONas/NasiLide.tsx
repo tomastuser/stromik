@@ -11,7 +11,7 @@ const NasiLide = () => {
 
   const serazeniOdNejvyssiho = () => {
     return [].slice.call(clenove).sort((a: ClenIF, b: ClenIF) => {
-      return Number(b.id) - Number(a.id);
+      return b.Poradi - a.Poradi;
     });
   };
   return (

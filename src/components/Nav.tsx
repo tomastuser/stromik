@@ -15,8 +15,8 @@ function Nav() {
       id: '1',
       subNavLinks: [
         {
-          name: 'O Mariánce',
-          path: '/onas/omariance',
+          name: 'O Stromíku',
+          path: '/onas/ostromiku',
         },
         {
           name: 'Zázemí',
@@ -64,6 +64,10 @@ function Nav() {
         {
           name: 'Naše pravidla',
           path: '/info/nasepravidla',
+        },
+        {
+          name: 'Jak se žije v lesní školce',
+          path: '/info/jaksezije',
         },
       ],
     },

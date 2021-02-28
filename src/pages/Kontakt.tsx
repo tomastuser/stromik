@@ -16,8 +16,7 @@ function Kontakt() {
                 <div className='gmap_canvas'>
                   <iframe
                     id='gmap_canvas'
-                    title='gmap_canvas'
-                    src='https://maps.google.com/maps?q=49.2155000N%2C%2016.6988333E&t=&z=13&ie=UTF8&iwloc=&output=embed'
+                    src='https://maps.google.com/maps?q=Host%C4%9Bnick%C3%A1%20626,%20664%2007%20Pozo%C5%99ice&t=&z=15&ie=UTF8&iwloc=&output=embed'
                     scrolling='no'
                     marginHeight={0}
                     marginWidth={0}
@@ -48,8 +47,7 @@ function Kontakt() {
                 <div className='gmap_canvas'>
                   <iframe
                     id='gmap_canvas'
-                    title='gmap_canvas'
-                    src='https://maps.google.com/maps?q=49.2155000N%2C%2016.6988333E&t=&z=13&ie=UTF8&iwloc=&output=embed'
+                    src='https://maps.google.com/maps?q=Host%C4%9Bnick%C3%A1%20626,%20664%2007%20Pozo%C5%99ice&t=&z=15&ie=UTF8&iwloc=&output=embed'
                     scrolling='no'
                     marginHeight={0}
                     marginWidth={0}

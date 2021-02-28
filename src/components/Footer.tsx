@@ -8,7 +8,7 @@ import { faBusAlt } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import givt from '../public/givt.png';
 import alms from '../public/alms.png';
-import girlanda from '../public/girlmari.png';
+import girlanda from '../public/girlstrom.png';
 import darujme from '../public/darujme.png';
 import cert from '../public/cert.png';
 import { StrankaIF } from '../utils/dbInterfaces';
