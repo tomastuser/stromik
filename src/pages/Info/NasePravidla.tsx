@@ -11,7 +11,7 @@ const NasePravidla = () => {
         <div className='mainText'>
           <Zaklad nazev='Naše pravidla' />
           <ContentImport nazev='Naše pravidla' />
-          <FotoCont name='pravidla.jpg' alt='Pravidla' />
+          <FotoCont name='nasePravidla.jpg' alt='Pravidla' />
         </div>
       </div>
     </Layout>

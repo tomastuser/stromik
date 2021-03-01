@@ -40,42 +40,15 @@ function UvodSlider() {
   return (
     <>
       <Slider {...settings}>
-        <CustomSlide
-          index={1}
-          url={
-            'https://res.cloudinary.com/tomastuser/image/upload/v1587555031/lhk1iramcsrxzdl5uf9h.jpg'
-          }
-        />
-        <CustomSlide
-          index={2}
-          url={
-            'https://res.cloudinary.com/tomastuser/image/upload/v1587555043/obxzsaaqzz6u9qj3yma5.jpg'
-          }
-        />
-        <CustomSlide
-          index={3}
-          url={
-            'https://res.cloudinary.com/tomastuser/image/upload/v1587555069/pqnkudhjczxcy0mf9fxa.jpg'
-          }
-        />
-        <CustomSlide
-          index={4}
-          url={
-            'https://res.cloudinary.com/tomastuser/image/upload/v1587577195/wfcjam3i8aakkowl51do.jpg'
-          }
-        />
+        <CustomSlide index={1} url={'http://new.stromik.cz/images/repa.jpg'} />
+        <CustomSlide index={2} url={'http://new.stromik.cz/images/trava.jpg'} />
+        <CustomSlide index={3} url={'http://new.stromik.cz/images/libor.jpg'} />
+        <CustomSlide index={4} url={'http://new.stromik.cz/images/sona.jpg'} />
         <CustomSlide
           index={5}
-          url={
-            'https://res.cloudinary.com/tomastuser/image/upload/v1587555050/xypg4yxk6drpn00dysd9.jpg'
-          }
+          url={'http://new.stromik.cz/images/masopust.jpg'}
         />
-        <CustomSlide
-          index={6}
-          url={
-            'https://res.cloudinary.com/tomastuser/image/upload/v1587570666/p46ydhhi7tzf1gqgmqae.jpg'
-          }
-        />
+        <CustomSlide index={6} url={'http://new.stromik.cz/images/holky.jpg'} />
       </Slider>
       <div className='vitejteCont'>
         <div className='vitejte'>

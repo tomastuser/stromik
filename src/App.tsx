@@ -55,7 +55,7 @@ const App = () => {
     'https://stromik.herokuapp.com/stranky'
   );
   let sponzori: SponzorIF[] | undefined = useFetch(
-    'https://marianka.herokuapp.com/sponzori'
+    'https://stromik.herokuapp.com/sponzori'
   );
 
   return (

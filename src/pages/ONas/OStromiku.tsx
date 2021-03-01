@@ -11,9 +11,9 @@ const OStromiku = () => {
         <div className='mainText'>
           <Zaklad nazev='O Stromíku' />
           <ContentImport nazev='O Stromíku 1' />
-          <FotoCont name='omari.jpg' alt='O Stromíku 1' />
+          <FotoCont name='oStromiku1.jpg' alt='O Stromíku 1' />
           <ContentImport nazev='O Stromíku 2' />
-          <FotoCont name='omari2.jpg' alt='O Stromíku 2' />
+          <FotoCont name='oStromiku2.jpg' alt='O Stromíku 2' />
         </div>
       </div>
     </Layout>

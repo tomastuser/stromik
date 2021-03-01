@@ -11,9 +11,7 @@ const CoSSebou = () => {
         <div className='mainText'>
           <Zaklad nazev='Co s sebou' />
           <ContentImport nazev='Co s sebou 1' />
-          <FotoCont name='cossebou.jpg' alt='Co s sebou' />
-          <ContentImport nazev='Co s sebou 2' />
-          <FotoCont name='cossebou2.jpg' alt='Co s sebou 2' />
+          <FotoCont name='coSSebou.jpg' alt='Co s sebou' />
         </div>
       </div>
     </Layout>

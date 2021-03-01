@@ -11,7 +11,7 @@ const Tabory = () => {
         <div className='mainText'>
           <Zaklad nazev='Tábory' />
           <ContentImport nazev='Tábory' />
-          <FotoCont name='tabor.jpg' alt='Tabor' />
+          <FotoCont name='tabory.jpg' alt='Tabor' />
         </div>
       </div>
     </Layout>

@@ -712,6 +712,7 @@ tr:nth-child(even) {
 .vitejte {
   position: relative;
   color: rgb(253, 253, 236);
+  text-shadow: 1px 1px 2px rgb(68, 68, 68);
   text-align: center;
   top: -5vh;
   font-size: 6vh;

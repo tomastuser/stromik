@@ -6,12 +6,12 @@ import Zaklad from '../../components/Zaklad';
 
 const JakSeZije = () => {
   return (
-    <Layout title='Ceník'>
+    <Layout title='Jak se žije v lesní školce'>
       <div className='mainTextCont'>
         <div className='mainText'>
           <Zaklad nazev='Jak se žije v lesní školce' />
           <ContentImport nazev='Jak se žije' />
-          <FotoCont name='cenik.jpg' alt='JakSeZije' />
+          {/* <FotoCont name='cenik.jpg' alt='JakSeZije' /> */}
         </div>
       </div>
     </Layout>
