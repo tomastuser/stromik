@@ -985,6 +985,7 @@ tr:nth-child(even) {
   background-image: url(./public/aktualitypozadi_STROMIK.png);
   background-size: 800px;
   padding-bottom: 12vh;
+  overflow-x: hidden;
 }
 
 .pagination {
@@ -1052,7 +1053,6 @@ tr:nth-child(even) {
   padding-right: 8vw;
   grid-gap: 4vw;
   margin-bottom: 6vh;
-  overflow-x: hidden;
 }
 
 .aktualitaZastupce {
