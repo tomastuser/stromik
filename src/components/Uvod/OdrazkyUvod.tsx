@@ -2,13 +2,13 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faBug,
-  faMapSigns,
+  faHandsHelping,
   faCloudSun,
-  faMapMarkedAlt,
-  faComments,
+  faPenNib,
+  faHandHoldingHeart,
   faCampground,
   faTree,
-  faHome,
+  faPaw,
   faSeedling,
   faFrog,
 } from '@fortawesome/free-solid-svg-icons';
@@ -101,19 +101,19 @@ function OdrazkyUvod() {
           {'  '} dlouholetá tradice
         </li>
         <li>
-          <FontAwesomeIcon icon={faComments} size='1x' fixedWidth />
+          <FontAwesomeIcon icon={faHandHoldingHeart} size='1x' fixedWidth />
           {'  '} kvalifikovaní pedagogové
         </li>
         <li>
-          <FontAwesomeIcon icon={faHome} size='1x' fixedWidth />
+          <FontAwesomeIcon icon={faPaw} size='1x' fixedWidth />
           {'  '} plnohodnotné vzdělávání, včetně předškoláků
         </li>
         <li>
-          <FontAwesomeIcon icon={faMapMarkedAlt} size='1x' fixedWidth />
+          <FontAwesomeIcon icon={faPenNib} size='1x' fixedWidth />
           {'  '} zápis v rejstříku MŠMT
         </li>
         <li>
-          <FontAwesomeIcon icon={faMapSigns} size='1x' fixedWidth />
+          <FontAwesomeIcon icon={faHandsHelping} size='1x' fixedWidth />
           {'  '} člen Asociace lesních mateřských škol
         </li>
       </ul>

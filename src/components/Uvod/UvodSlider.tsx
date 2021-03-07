@@ -40,8 +40,8 @@ function UvodSlider() {
   return (
     <>
       <Slider {...settings}>
-        <CustomSlide index={1} url={'http://new.stromik.cz/images/repa.jpg'} />
-        <CustomSlide index={2} url={'http://new.stromik.cz/images/trava.jpg'} />
+        <CustomSlide index={1} url={'http://new.stromik.cz/images/trava.jpg'} />
+        <CustomSlide index={2} url={'http://new.stromik.cz/images/repa.jpg'} />
         <CustomSlide index={3} url={'http://new.stromik.cz/images/libor.jpg'} />
         <CustomSlide index={4} url={'http://new.stromik.cz/images/sona.jpg'} />
         <CustomSlide

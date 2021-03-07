@@ -425,7 +425,7 @@ tr:nth-child(even) {
   padding: 20px;
 }
 
-.copyright h3 {
+.copyright h4 {
   font-family: Marianka, 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
   color: black;
@@ -497,7 +497,7 @@ tr:nth-child(even) {
   color: black;
 }
 .footerInfo a:hover {
-  color: rgb(63, 63, 63);
+  color: var(--linkHover);
 }
 
 .footerInfo img {
@@ -562,18 +562,14 @@ tr:nth-child(even) {
 
 .pozadiFixed {
   position: fixed;
-  width: 100vw;
-  bottom: 48%;
-  left: 50%;
-  margin-bottom: -50vh;
-  margin-left: -50vw;
-  object-fit: cover;
   z-index: -1;
   overflow: hidden;
 }
 
 .pozadiFixed img {
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .pozadiPrazdneContainer {
@@ -617,11 +613,13 @@ tr:nth-child(even) {
   text-align: right;
   grid-column: 1/2;
   list-style: none;
+  margin-bottom: 2vh;
 }
 
 .odrazkySloupecB {
   text-align: left;
   list-style: none;
+  margin-bottom: 2vh;
 }
 
 .ikonaD {
@@ -642,6 +640,7 @@ tr:nth-child(even) {
 .odrazkyUvodContainer ul {
   list-style: none;
   margin-left: 0;
+  margin-bottom: 0;
 }
 
 .odrazkyNadpis {
@@ -780,13 +779,10 @@ tr:nth-child(even) {
   padding-bottom: 4vh;
 }
 
-.andelCont {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  margin-top: 8vh;
-}
 .andel {
-  grid-column: 2/3;
+  margin-top: 8vh;
+  margin-left: -10%;
+  width: 120%;
 }
 
 .andelObrazek {
@@ -798,13 +794,15 @@ tr:nth-child(even) {
 }
 .dotkni {
   position: absolute;
-  top: 10%;
-  left: 65%;
+  top: -5%;
+  left: 62%;
   z-index: 3;
   opacity: 0;
   font-family: Marianka, 'Roboto Condensed', sans-serif;
   transition: opacity 1s ease;
+  width: 20% !important;
 }
+
 .andelObrazek:hover .dotkni {
   opacity: 1;
 }
@@ -945,6 +943,11 @@ tr:nth-child(even) {
   background-size: 800px;
   padding-top: 5vh;
   padding-bottom: 20vh;
+}
+
+.aktualityPrehledUvod h1 {
+  z-index: 20;
+  position: relative;
 }
 
 .aktualityPrehledUvod {
@@ -1782,6 +1785,7 @@ tr:nth-child(even) {
 
   .pozadiPrazdneContainer {
     grid-template-columns: 1fr 25fr 1fr;
+    padding-bottom: 10vh;
   }
 
   .pozadiPrazdne {
@@ -1792,9 +1796,6 @@ tr:nth-child(even) {
     padding-left: 10vw;
     padding-right: 10vw;
     padding-bottom: 10vh;
-  }
-  .andelCont {
-    grid-template-columns: 1fr 8fr 1fr;
   }
   .FooterD {
     display: none;
