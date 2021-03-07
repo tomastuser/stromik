@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import OdrazkyUvod from '../components/Uvod/OdrazkyUvod';
-import UvodSlider from '../components/Uvod/UvodSlider';
+import UvodEl from '../components/Uvod/Uvod';
 import AktualitaZastupce from '../components/AktualitaZastupce';
 import Layout from '../components/Layout';
 import { dbContext } from '../utils/dbContext';
@@ -20,11 +20,14 @@ function Uvod() {
   return (
     <Layout title='Úvodní strana'>
       <div className='pozadiFixed'>
-        <img src={PozadiFixed} alt='pozadiFixed' />
+        <img
+          src='https://lesnikavyl.cz/images/pozadiFixedStromik.jpg'
+          alt='pozadiFixed'
+        />
       </div>
       <div className='Uvod'>
         <div className='uvodAktuality'>
-          <UvodSlider />
+          <UvodEl />
           <div className='aktualityPrehledUvod'>
             <h1>Co je u nás nového?</h1>
             {aktuality && aktuality.length > 0 ? (
