@@ -681,7 +681,7 @@ tr:nth-child(even) {
 .uvodSlider img {
   position: relative;
   width: 100%;
-  /* height: 90vh; */
+  height: auto;
   object-fit: cover;
 }
 
