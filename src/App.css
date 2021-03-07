@@ -1052,6 +1052,7 @@ tr:nth-child(even) {
   padding-right: 8vw;
   grid-gap: 4vw;
   margin-bottom: 6vh;
+  overflow-x: hidden;
 }
 
 .aktualitaZastupce {
