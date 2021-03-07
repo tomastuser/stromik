@@ -29,6 +29,7 @@ body {
 
 body a {
   text-decoration: none;
+  word-break: break-all;
 }
 
 a:focus,
@@ -1216,7 +1217,6 @@ tr:nth-child(even) {
   position: relative;
   background-color: transparent;
   z-index: 2;
-  /* background-color: #e27c47; */
 }
 .aktualitaPozadi6::after {
   content: ' ';
