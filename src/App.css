@@ -920,6 +920,11 @@ tr:nth-child(even) {
   list-style: none;
 }
 
+.zakladKontakt {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .kontaktContD {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -973,6 +978,7 @@ tr:nth-child(even) {
   background-size: 800px;
   padding-top: 5vh;
   padding-bottom: 20vh;
+  overflow-x: hidden;
 }
 
 .aktualityPrehledUvod h1 {
@@ -1893,6 +1899,7 @@ tr:nth-child(even) {
   }
   .kontaktContD {
     display: none;
+    list-style: none;
   }
   .kontaktContM {
     display: flex;
@@ -1903,6 +1910,14 @@ tr:nth-child(even) {
     display: flex;
     flex-direction: column;
     text-align: center;
+  }
+  .kontaktB {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .zakladKontakt {
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
   .mapouterM {
     display: block;
