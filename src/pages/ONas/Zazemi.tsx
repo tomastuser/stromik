@@ -13,7 +13,7 @@ const Zazemi = () => {
           <ContentImport nazev='Zázemí 1' />
           <FotoCont name='zazemi1.jpg' alt='Zazemi 1' />
           <ContentImport nazev='Zázemí 2' />
-          <FotoCont name='zazemi2.jpg' alt='Zazemi 2' />
+          {/* <FotoCont name='zazemi2.jpg' alt='Zazemi 2' /> */}
         </div>
       </div>
     </Layout>

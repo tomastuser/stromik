@@ -165,15 +165,20 @@ table {
 }
 
 th {
-  padding-right: 2vw;
-  padding-left: 2vw;
+  padding-right: 0.6rem;
+  padding-left: 0.6rem;
+}
+
+td:first-child {
+  line-break: strict;
+  text-align: center;
 }
 
 td {
   padding: 0.3vw;
-  padding-right: 2vw;
-  padding-left: 2vw;
-  min-width: 100px;
+  padding-right: 0.6rem;
+  padding-left: 0.6rem;
+  min-width: 130px;
 }
 
 tr:nth-child(even) {
@@ -1960,6 +1965,13 @@ tr:nth-child(even) {
 @media screen and (max-width: 450px) {
   body {
     font-size: 1rem;
+  }
+  td {
+    min-width: unset;
+  }
+  td:first-child {
+    max-width: 85px;
+    text-align: left;
   }
   .mainOstatniNadpis {
     grid-template-columns: 1fr 8fr 1fr;
