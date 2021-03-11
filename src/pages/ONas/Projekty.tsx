@@ -12,8 +12,6 @@ const Projekty = () => {
           <Zaklad nazev='Projekty' />
           <ContentImport nazev='Projekty 1' />
           <FotoCont name='projekty.jpg' alt='Projekty 1' />
-          <ContentImport nazev='Projekty 2' />
-          <FotoCont name='projekty2.jpg' alt='Projekty 2' />
         </div>
       </div>
     </Layout>
