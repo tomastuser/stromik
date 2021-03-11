@@ -88,6 +88,10 @@ function Nav() {
       open: false,
       subNavLinks: [
         {
+          name: 'Obecně',
+          path: '/kavyl',
+        },
+        {
           name: 'Kroužky',
           path: '/kavyl/krouzky',
         },
@@ -197,26 +201,49 @@ function Nav() {
                   </NavLink>
                 )}
                 <ul className='subNav'>
-                  {link.subNavLinks.map((subLink) => (
-                    <li
-                      key={subLink.name}
-                      className={
-                        window.innerWidth < 769
-                          ? subNavLinksOpen[Number(link.id) - 1]
-                            ? 'subNavLi subNavActive'
+                  {link.subNavLinks.map((subLink) =>
+                    subLink.name === 'Obecně' ? (
+                      window.innerWidth < 769 && (
+                        <li
+                          key={subLink.name}
+                          className={
+                            window.innerWidth < 769
+                              ? subNavLinksOpen[Number(link.id) - 1]
+                                ? 'subNavLi subNavActive'
+                                : 'subNavLi'
+                              : 'subNavLi'
+                          }
+                        >
+                          <NavLink
+                            className='navLink'
+                            activeClassName='navLinkActive'
+                            to={{ pathname: subLink.path }}
+                          >
+                            <p>{subLink.name}</p>
+                          </NavLink>
+                        </li>
+                      )
+                    ) : (
+                      <li
+                        key={subLink.name}
+                        className={
+                          window.innerWidth < 769
+                            ? subNavLinksOpen[Number(link.id) - 1]
+                              ? 'subNavLi subNavActive'
+                              : 'subNavLi'
                             : 'subNavLi'
-                          : 'subNavLi'
-                      }
-                    >
-                      <NavLink
-                        className='navLink'
-                        activeClassName='navLinkActive'
-                        to={{ pathname: subLink.path }}
+                        }
                       >
-                        <p>{subLink.name}</p>
-                      </NavLink>
-                    </li>
-                  ))}
+                        <NavLink
+                          className='navLink'
+                          activeClassName='navLinkActive'
+                          to={{ pathname: subLink.path }}
+                        >
+                          <p>{subLink.name}</p>
+                        </NavLink>
+                      </li>
+                    )
+                  )}
                 </ul>
               </li>
             ))}

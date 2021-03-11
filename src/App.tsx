@@ -47,7 +47,7 @@ import {
 
 const App = () => {
   let aktuality: AktualitaIF[] | undefined = useFetch(
-    'https://marianka.herokuapp.com/aktuality/'
+    'https://stromik.herokuapp.com/aktuality/'
   );
   let clenove: ClenIF[] | undefined = useFetch(
     'https://stromik.herokuapp.com/lide'

@@ -68,6 +68,7 @@ main a:hover {
   /* background-repeat: no-repeat; */
   background-size: 800px;
   min-height: 80vh;
+  overflow-y: hidden;
 }
 
 .mainText {
@@ -1350,7 +1351,6 @@ tr:nth-child(even) {
   border-image-outset: -20px;
   text-align: left;
   padding: 4vh;
-  /* overflow: auto; */
   display: flex;
   flex-direction: column;
   position: relative;
