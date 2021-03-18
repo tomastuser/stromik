@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 import caraNavR from '../public/caraNavR.png';
-import stromikLogo from '../public/stromikLogo.png';
+import stromikLogo from '../public/logo_stromik_LMS.png';
 import logoNapis from '../public/logo.png';
 
 function Nav() {
