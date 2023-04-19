@@ -1035,6 +1035,54 @@ export const aktuality = [
     updated_at: '2022-06-27T15:12:16.688Z',
     Image: null,
   },
+  {
+    id: 31,
+    Nazev: 'PF 2023',
+    Text: '<p>Přejeme krásné svátky a do nového roku pevná přátelství, zdraví a hodně sil!</p>',
+    created_at: '2022-11-15T16:37:19.154Z',
+    updated_at: '2022-11-15T16:37:19.166Z',
+    Image: {
+      name: 'NÁHLED_pf23_upravene2_gj0xwb',
+      ext: '.jpg',
+      mime: 'image/jpeg',
+      url: 'https://res.cloudinary.com/marianka/image/upload/v1671793330/N%C3%81HLED_pf23_upravene2_gj0xwb.jpg',
+      previewUrl: null,
+      provider: 'cloudinary',
+      created_by: 1,
+      updated_by: 1,
+      created_at: '2022-11-15T16:37:12.570Z',
+      updated_at: '2022-11-15T16:37:12.603Z',
+    },
+  },
+  {
+    id: 32,
+    Nazev: 'Řez ovocných stromů',
+    Text: `<p>Chcete se naučit řezu stromů?</p> <p>Srdečně zveme na praktický workshop s potulným sadařem Janem Budkou.</p><p> 
+    Kdy: v sobotu 18. 2. od 9 h</p>
+    <p>Kde: u nás na pozořické hájence</p>
+    <p>Přihlašovat se můžete <a href="https://1url.cz/tr0kF">zde</a>.</p>`,
+    created_at: '2022-09-29T16:16:39.316Z',
+    updated_at: '2022-09-29T16:18:18.645Z',
+    Image: null,
+  },
+  {
+    id: 33,
+    Nazev: 'Tábory 2023',
+    Text: '<p>Také už se nemůžete dočkat léta a vaše děti prázdninových dobrodružství?&nbsp;</p><p>Srdečně zveme na naše příměstské tábory!</p><p>Podrobnosti najdete <a href="https://lesnikavyl.cz/tabory">zde</a>.</p>',
+    created_at: '2022-03-14T15:07:22.812Z',
+    updated_at: '2022-03-14T15:08:11.512Z',
+    Image: {
+      url: 'https://lesnikavyl.cz/images/tabory23.jpg',
+    },
+  },
+  {
+    id: 34,
+    Nazev: 'Den otevřených vrátek',
+    Text: '<p>Myslíte si, že je pro vaše děti lesní školka to pravé?</p><p>Srdečně zveme na Den otevřených vrátek!</p><p><strong>13. dubna odpoledne</strong></p><p>Přijďte se podívat a poptat, jak to v LMŠ Stromík a v LK Jezerka chodí.</p><p>Zápis do LMŠ bude 10. května 2023</p>',
+    created_at: '2022-03-14T15:07:22.812Z',
+    updated_at: '2022-03-14T15:08:11.512Z',
+    Image: null,
+  },
 ];
 
 export const clenove = [
@@ -1690,7 +1738,7 @@ export const stranky = [
   {
     id: 16,
     Nazev: 'Projekty 1',
-    Text: '<h3>NNO Slavkovské bojiště v přírodě (2020–23)</h3><p>Prostřednictvím našeho zřizovatele se podílíme na projektu <a href="https://slavkovskebojiste.cz/"><strong>MAS Slavkovské bojiště</strong></a>, který má za cíl podpořit nabídku neformálního vzdělávání a zvýšit jeho kvalitu na území MAS Slavkovské bojiště. V rámci projektu chceme sdílet zkušenosti s přírodní pedagogikou a obohatit se o zkušenosti s jinými metodami vzdělávání, rozvinout nové poznatky v programech zaměřených na environmentální výchovu a zvýšit kvalifikaci našich lektorů.</p><p>&nbsp;</p>',
+    Text: '<h3>NNO Slavkovské bojiště v přírodě (2020–23)</h3><p>Prostřednictvím našeho zřizovatele se podílíme na projektu <a href="https://slavkovskebojiste.cz/"><strong>MAS Slavkovské bojiště</strong></a>, který má za cíl podpořit nabídku neformálního vzdělávání a zvýšit jeho kvalitu na území MAS Slavkovské bojiště. V rámci projektu chceme sdílet zkušenosti s přírodní pedagogikou a obohatit se o zkušenosti s jinými metodami vzdělávání, rozvinout nové poznatky v programech zaměřených na environmentální výchovu a zvýšit kvalifikaci našich lektorů.</p><h3>Digitalizujeme školu</h3><div style="display: flex; justify-content: center"><img src="/images/digitalizujeme.png"></div><p>&nbsp;</p>',
     created_at: '2021-02-28T16:39:47.513Z',
     updated_at: '2021-03-18T08:27:14.238Z',
   },
@@ -1781,7 +1829,7 @@ export const stranky = [
   {
     id: 11,
     Nazev: 'Tábory',
-    Text: '<p>Letní příměstské tábory spolku Kavyl jsou určeny zejména pro děti ve věku 3-7 let, které ještě nechodí do školy. Máte-li děti různého věku, můžete je ve vybraných termínech přihlásit společně, protože otevíráme dvě paralelní skupiny s vlastním programem pro děti předškolní a školáky z 1. stupně ZŠ. Tábory se konají v zázemí Stromíku (v Pozořicích) a <a href="https://www.lesnimarianka.cz/kontakt">Mariánky (v Líšni)</a> a v okolních lesích. Provozní doba tábora je vždy od pondělí do pátku od 8 do 16 h.</p><h3>Aktuální informace</h3><p><i>Aktuálně 21. 4.: Děkujeme za velký zájem o tábory. Kapacita je v současné chvíli zcela naplněna. Další přihlášené táborníky evidujeme jako náhradníky a ozveme se vám, když se uvolní místo.</i></p><p>V letošním roce si můžete vybírat z následujících táborů:</p><p><i>Mariánka</i></p><p><i>11. – 15. 7. (3–7 let) - Indiáni ze Samot</i></p><p><i>15. – 19. 8. (3–7 let) - Čarování s přírodou</i></p><p><i>Stromík</i></p><p><i>18. – 22. 7. (3–7 let a 7–10 let) - Dobrodružství s Bobem a Bobkem</i></p><p><i>25. – 29. 7. (3–7 let) - Lesní strašidýlka</i></p><p><i>1.– 5. 8. (5–9 let) - Hurá do lesa!</i></p><p><i>8. – 12. 8. (3–7 let) - V říši divů</i></p><p>Cena tábora je 2 200 Kč. V ceně není zahrnut oběd (60–75 Kč dle dodavatele).</p><p>Podrobné informace k organizaci najdete v online PŘIHLÁŠCE, k tématům pak <a href="https://drive.google.com/file/d/1npm9cp3x9xRspFhMAxT4u1za-dCm1_ts/view?usp=sharing">zde</a>.</p><p>Těšíme se na vaše děti!</p>',
+    Text: '<p>Letní příměstské tábory spolku Kavyl jsou určeny pro děti ve věku 3,5–7 let, které ještě nechodí do školy. Vybrané tábory jsou i pro školní děti (u termínu je uvedený věk). Jsou-li u jednoho termínu a místa uvedeny dva tábory, znamená to, že organizujeme dvě skupiny (předškolní a školní) se samostatným programem, tak abyste mohli přihlásit najednou sourozence různého věku.</p><p> Tábory se konají v zázemí Stromíku (v Pozořicích) a <a href="https://www.lesnimarianka.cz/kontakt">Mariánky (v Líšni)</a> a v okolních lesích. Provozní doba tábora je vždy od pondělí do pátku od 8 do 16 h.</p><h3>Tábory 2023</h3><p><i>Příměstské tábory se budou konat v následujících termínech. <br/><br/> Brno-Líšeň (Mariánka)<br/> 10. - 14. 7. (3,5 – 7 let) Kouzelný les a jeho obyvatelé<br/> 17. - 21. 7. (5 – 8 let) Bylo, nebylo a co bude dál? <br/> 21. - 25. 8. (3,5 – 7 let) Dobrodružství v Čarolese<br/><br/>Pozořice (Stromík) <br/>10. - 14. 7. (1. – 3. třída) Hmyzí detektivové<br/>24. - 28. 7. (3,5 – 7 let a 7–10 let) Indiánskou stezkou<br/> 7. - 11. 8. (5 – 10 let) Mauglího dobrodružství - obsazeno<br/>14. - 18. 8. (3,5 – 7 let) Byla jednou jedna nota<br/> 21. - 25. 8. (3,5 – 7 let) Kouzelný les<br/><br/>Cena tábora je 2 500 Kč.<br/><br/>Přihlašovat můžete děti prostřednictvím <a href="https://forms.gle/raR2sCa3uFJmLZJR6">ONLINE PŘIHLÁŠKY</a>.<br/><br/>Zajímají-li vás podrobněji jednotlivá témata táborů, podívejte se na <a href="https://www.lesnikavyl.cz/files/tabory_anotace_2023.png">anotace</a>.<br/><br/>Těšíme se v létě na viděnou!</i>',
     created_at: '2021-02-23T20:26:14.930Z',
     updated_at: '2022-09-16T08:57:42.799Z',
   },

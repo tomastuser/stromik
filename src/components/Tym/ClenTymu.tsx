@@ -18,7 +18,9 @@ const ClenTymu = ({ clen }: { clen: ClenIF }) => (
       ) : (
         <img alt='profilTecky' className='profilFotoTecky' src={tec11} />
       )}
-      {clen.Image && <img src={clen.Image.url} alt={clen.Jmeno} />}
+      {(clen.Image || clen.ImageUrl) && (
+        <img src={clen.Image?.url || clen.ImageUrl} alt={clen.Jmeno} />
+      )}
       {Number(clen.id) % 3 === 0 ? (
         <img alt='profilTecky' className='profilFotoTecky' src={tec32} />
       ) : Number(clen.id) % 2 === 0 ? (

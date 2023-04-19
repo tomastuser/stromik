@@ -30,7 +30,7 @@ const NasiLide = () => {
                 {serazeniOdNejvyssiho()
                   .reverse()
                   .map((clen: ClenIF) => (
-                    <ClenTymu key={clen.id} clen={clen} />
+                    <ClenTymu key={clen.Poradi} clen={clen} />
                   ))}
               </div>
             </div>

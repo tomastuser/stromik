@@ -10,9 +10,10 @@ const ContentImport = ({ nazev }: { nazev: string }) => {
       {stranky && stranky.length > 0 ? (
         stranky.map((stranka) =>
           stranka.Nazev === nazev ? (
-            <>
-              <div dangerouslySetInnerHTML={{ __html: stranka.Text }} />
-            </>
+            <div
+              key={stranka.Nazev}
+              dangerouslySetInnerHTML={{ __html: stranka.Text }}
+            />
           ) : null
         )
       ) : (
