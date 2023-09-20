@@ -11,6 +11,8 @@ const Projekty = () => {
         <div className='mainText'>
           <Zaklad nazev='Projekty' />
           <ContentImport nazev='Projekty 1' />
+          <FotoCont name='OP JAK STR 2023.jpg' alt='Projekty 1' />
+          <ContentImport nazev='Projekty 2' />
           <FotoCont name='projekty.jpg' alt='Projekty 1' />
         </div>
       </div>
