@@ -6,6 +6,7 @@ import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faBusAlt } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
+import { faChild } from '@fortawesome/free-solid-svg-icons';
 import givt from '../public/givt.png';
 import alms from '../public/alms.png';
 import girlanda from '../public/girlstrom.png';
@@ -23,6 +24,7 @@ const Footer = () => {
     <FontAwesomeIcon icon={faPaperPlane} size='1x' fixedWidth />,
     <FontAwesomeIcon icon={faHome} size='1x' fixedWidth />,
     <FontAwesomeIcon icon={faBusAlt} size='1x' fixedWidth />,
+    <FontAwesomeIcon icon={faChild} size='1x' fixedWidth />,
     <FontAwesomeIcon icon={faPhone} size='1x' fixedWidth />,
     <FontAwesomeIcon icon={faFacebookF} size='1x' fixedWidth />,
   ];

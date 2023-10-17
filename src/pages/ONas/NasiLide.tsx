@@ -10,6 +10,7 @@ const NasiLide = () => {
   const { clenove } = useContext(dbContext);
 
   const serazeniOdNejvyssiho = () => {
+    console.log(clenove);
     return [].slice.call(clenove).sort((a: ClenIF, b: ClenIF) => {
       return b.Poradi - a.Poradi;
     });
@@ -30,7 +31,7 @@ const NasiLide = () => {
                 {serazeniOdNejvyssiho()
                   .reverse()
                   .map((clen: ClenIF) => (
-                    <ClenTymu key={clen.Poradi} clen={clen} />
+                    <ClenTymu key={`${clen.Poradi} ${clen.id}`} clen={clen} />
                   ))}
               </div>
             </div>
