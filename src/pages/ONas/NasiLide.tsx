@@ -10,7 +10,6 @@ const NasiLide = () => {
   const { clenove } = useContext(dbContext);
 
   const serazeniOdNejvyssiho = () => {
-    console.log(clenove);
     return [].slice.call(clenove).sort((a: ClenIF, b: ClenIF) => {
       return b.Poradi - a.Poradi;
     });

@@ -50,16 +50,16 @@ import {
 
 const App = () => {
   let aktuality: AktualitaIF[] | undefined = useFetch(
-    'https://editor.stromik.cz/api/aktuality?pagination[start]=0&pagination[limit]=1000'
+    'https://editor.stromik.cz/api/aktuality?pagination[start]=0&pagination[limit]=1000&populate=*'
   );
   let clenove: ClenIF[] | undefined = useFetch(
-    'https://editor.stromik.cz/api/tym-clenove?pagination[start]=0&pagination[limit]=1000'
+    'https://editor.stromik.cz/api/tym-clenove?pagination[start]=0&pagination[limit]=1000&populate=*'
   );
   let stranky: StrankaIF[] | undefined = useFetch(
     'https://editor.stromik.cz/api/stranky?pagination[start]=0&pagination[limit]=1000'
   );
   let sponzori: SponzorIF[] | undefined = useFetch(
-    'https://editor.stromik.cz/api/sponzori?pagination[start]=0&pagination[limit]=1000'
+    'https://editor.stromik.cz/api/sponzori?pagination[start]=0&pagination[limit]=1000&populate=*'
   );
 
   return (
