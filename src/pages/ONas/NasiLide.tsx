@@ -11,6 +11,12 @@ const NasiLide = () => {
 
   const serazeniOdNejvyssiho = () => {
     return [].slice.call(clenove).sort((a: ClenIF, b: ClenIF) => {
+      if (a.Poradi === null) {
+        return -1;
+      }
+      if (b.Poradi === null) {
+        return 1;
+      }
       return b.Poradi - a.Poradi;
     });
   };
