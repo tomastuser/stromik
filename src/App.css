@@ -36,6 +36,9 @@ div:focus {
   outline: none;
   opacity: 55%;
 }
+dialog:focus {
+  outline: none;
+}
 
 main {
   line-height: 1.6;
@@ -275,6 +278,26 @@ tr:nth-child(even) {
   font-family: Marianka, 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
   color: var(--text);
+}
+
+dialog h1 {
+  font-family: Marianka, 'Roboto Condensed', sans-serif;
+}
+dialog p {
+  margin: 0px;
+}
+dialog {
+  color: var(--text);
+  border-image: url('./public/caraNav12R.png') 40.3 repeat;
+  border-image-width: 21px;
+  border-image-outset: 3px;
+  background-repeat: no-repeat;
+  background-image: url(./public/LH_ramecek_foto.png),
+    url(./public/LD_ramecek_foto.png), url(./public/PH_ramecek_foto.png),
+    url(./public/PD_ramecek_foto.png);
+  background-position: left top, left bottom, right top, right bottom;
+  background-size: 25px;
+  background-color: var(--back);
 }
 
 .logoCont {
