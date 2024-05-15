@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { dbContext } from '../utils/dbContext';
 import Loading from './Loading';
-import Zaklad from './Zaklad';
 
 const ContentImport = ({ nazev }: { nazev: string }) => {
   const { stranky } = useContext(dbContext);
