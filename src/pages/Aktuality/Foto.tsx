@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
+
 import Layout from '../../components/Layout';
 import Loading from '../../components/Loading';
 import { dbContext } from '../../utils/dbContext';
 import { AktualitaIF } from '../../utils/dbInterfaces';
-import { useNavigate, useParams } from 'react-router-dom';
 
 const Foto = () => {
   const { aktuality } = useContext(dbContext);

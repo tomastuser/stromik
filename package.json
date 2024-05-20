@@ -2,7 +2,7 @@
   "name": "stromikts",
   "version": "1.0.0",
   "description": "webapp for LMŠ Stromík",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "vite --open",
     "build": "tsc && vite build",
