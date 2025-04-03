@@ -7,7 +7,7 @@ import Layout from '../components/Layout';
 import { dbContext } from '../utils/dbContext';
 import { AktualitaIF } from '../utils/dbInterfaces';
 import Loading from '../components/Loading';
-// import DialogPopup from '../components/DialogPopup';
+import DialogPopup from '../components/DialogPopup';
 
 function Uvod() {
   const { aktuality } = useContext(dbContext);
@@ -67,7 +67,7 @@ function Uvod() {
           </div>
         </div>
       </div>
-      {/* <DialogPopup /> */}
+      <DialogPopup />
     </Layout>
   );
 }
