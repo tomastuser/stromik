@@ -3,7 +3,7 @@ export const parseImagesFromHTML = (html: string) => {
     const doc = parser.parseFromString(html, 'text/html');
     const hrefs = doc.querySelectorAll('a');
     hrefs.forEach((href) => {
-      if (href.href.endsWith('.png') || href.href.endsWith('.jpg')) {
+      if (href.href.endsWith('.png') || href.href.endsWith('.jpg') || href.href.endsWith('.jpeg')) {
         const newImage = document.createElement('div');
         newImage.classList.add('fotoCont');
         newImage.innerHTML = `<div class='fotoContImg'>
