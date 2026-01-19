@@ -6,6 +6,7 @@ import './App.css';
 import Uvod from './pages/Uvod';
 
 import OStromiku from './pages/ONas/OStromiku';
+import OdRodicu from './pages/ONas/OdRodicu';
 import Zazemi from './pages/ONas/Zazemi';
 import NasiLide from './pages/ONas/NasiLide';
 import Program from './pages/ONas/Program';
@@ -48,16 +49,16 @@ import {
 
 const App = () => {
   let aktuality: AktualitaIF[] | undefined = useFetch(
-    'https://editor.stromik.cz/api/aktuality?pagination[start]=0&pagination[limit]=1000&populate=*'
+    'https://editor.stromik.cz/api/aktuality?pagination[start]=0&pagination[limit]=1000&populate=*',
   );
   let clenove: ClenIF[] | undefined = useFetch(
-    'https://editor.stromik.cz/api/tym-clenove?pagination[start]=0&pagination[limit]=1000&populate=*'
+    'https://editor.stromik.cz/api/tym-clenove?pagination[start]=0&pagination[limit]=1000&populate=*',
   );
   let stranky: StrankaIF[] | undefined = useFetch(
-    'https://editor.stromik.cz/api/stranky?pagination[start]=0&pagination[limit]=1000'
+    'https://editor.stromik.cz/api/stranky?pagination[start]=0&pagination[limit]=1000',
   );
   let sponzori: SponzorIF[] | undefined = useFetch(
-    'https://editor.stromik.cz/api/sponzori?pagination[start]=0&pagination[limit]=1000&populate=*'
+    'https://editor.stromik.cz/api/sponzori?pagination[start]=0&pagination[limit]=1000&populate=*',
   );
 
   return (
@@ -69,6 +70,7 @@ const App = () => {
             <Route path='/' element={<Uvod />} />
             <Route path='/onas' element={<OStromiku />} />
             <Route path='/onas/ostromiku' element={<OStromiku />} />
+            <Route path='/onas/odrodicu' element={<OdRodicu />} />
             <Route path='/onas/zazemi' element={<Zazemi />} />
             <Route path='/onas/nastym' element={<NasiLide />} />
             <Route path='/onas/program' element={<Program />} />

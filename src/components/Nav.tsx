@@ -20,6 +20,10 @@ function Nav() {
           path: '/onas/ostromiku',
         },
         {
+          name: 'Od rodičů',
+          path: '/onas/odrodicu',
+        },
+        {
           name: 'Zázemí',
           path: '/onas/zazemi',
         },
@@ -133,7 +137,7 @@ function Nav() {
   const subNavOpeningHandler = (
     e:
       | React.MouseEvent<HTMLAnchorElement, MouseEvent>
-      | React.KeyboardEvent<HTMLAnchorElement>
+      | React.KeyboardEvent<HTMLAnchorElement>,
   ) => {
     const subs = [...subNavLinksOpen];
     const currentId = Number(e.currentTarget.id) - 1;
@@ -328,7 +332,7 @@ function Nav() {
                           <p>{subLink.name}</p>
                         </NavLink>
                       </li>
-                    )
+                    ),
                   )}
                 </ul>
               </li>
